@@ -54,7 +54,8 @@ header img {
     margin: 10px;
 
     border-radius: 25px;
-    width: 30%;
+    height: fit-content;
+    width: 25%;
 
     background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(255,255,255,1) 5%, rgba(255,255,255,1) 60%, rgba(210,210,210,1) 100%);
@@ -63,10 +64,8 @@ header img {
 .card img {
     border-radius: 50%;
     padding-top: 4px;
-}
 
-.card img:hover {
-    box-shadow: lightslategrey 2px 2px 6px;
+    width: 20rem;
 }
 
 .card h1 {
