@@ -1,0 +1,84 @@
+body {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 209, 124, 1) 100%
+  );
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 240, 213, 1) 51%,
+    rgba(255, 233, 192, 1) 74%,
+    rgba(255, 209, 124, 1) 100%
+  );
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 3rem 5rem;
+
+  border-radius: 3px;
+}
+
+header h1 {
+  font-family: "Staatliches", cursive;
+
+  font-size: 5rem;
+}
+
+header img {
+  width: 20rem;
+  height: auto;
+
+  opacity: 0.7;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+
+    margin: 10px;
+
+    border-radius: 25px;
+    width: 30%;
+
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 5%, rgba(255,255,255,1) 60%, rgba(210,210,210,1) 100%);
+}
+
+.card img {
+    border-radius: 50%;
+    padding-top: 4px;
+}
+
+.card img:hover {
+    box-shadow: lightslategrey 2px 2px 6px;
+}
+
+.card h1 {
+    font-weight: bold;
+    margin-top: 5px;
+
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    font-family: "Staatliches", cursive;
+}
+
+.card p {
+    padding: 3.5px;
+    font-family: 'Roboto', sans-serif;
+}
