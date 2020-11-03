@@ -12,7 +12,10 @@ fetch(url)
         li.innerHTML = `
         <img src="${digimon.img}" alt="${digimon.name}"/>
         <h1>${digimon.name}</h1>
-        <p>${digimon.level}</p>        
+        <p>${digimon.level}</p>
+        <a target="_blank" href="https://digimon.fandom.com/wiki/${digimon.name}">
+            <button><p>Digimon Fandom</p></button>
+        </a>        
         `
         ul.appendChild(li)
     })
