@@ -1,12 +1,15 @@
 body {
-  background: rgb(255, 255, 255);
+  background: #f46b45; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #eea849,
+    #f46b45
+  ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 240, 213, 1) 51%,
-    rgba(255, 233, 192, 1) 74%,
-    rgba(255, 209, 124, 1) 100%
-  );
+    to right,
+    #eea849,
+    #f46b45
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 header {
@@ -23,6 +26,47 @@ header h1 {
   font-family: "Staatliches", cursive;
 
   font-size: 5rem;
+
+  display: flex;
+  align-items: center;
+}
+
+.pokedex-img {
+  width: 4rem;
+}
+
+.search-container {
+  display: flex;
+
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+  padding: 14px;
+}
+
+.search-button {
+  font-weight: 300;
+  font-size: 15px;
+  text-transform: uppercase;
+
+  padding: 14px;
+
+  cursor: pointer;
+
+  background: linear-gradient(to right, #e2e2e2, #ffffff);
+
+  border: 1px solid gray;
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+}
+
+.magnifier-img {
+  width: 1rem;
+
+  margin: auto 5px;
 }
 
 header img {
@@ -49,22 +93,29 @@ header img {
 
   border-radius: 25px;
   height: fit-content;
-  width: 25%;
+  width: 20%;
 
-  background: rgb(255, 255, 255);
+  box-shadow: 1px 1px 8px 1px black;
+
   background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 5%,
-    rgba(255, 255, 255, 1) 60%,
-    rgba(210, 210, 210, 1) 100%
+    to right,
+    #acb6e5,
+    #74ebd5
   );
+}
+
+.card:hover {
+  transform: scale(1.2) rotate(365deg);
+  transition: 250ms transform;
 }
 
 .card img {
   border-radius: 50%;
-  padding-top: 4px;
+  margin: 8px;
 
-  width: 20rem;
+  width: 15rem;
+
+  border: #4d5874 4px solid;
 }
 
 .card h1 {
@@ -85,7 +136,6 @@ header img {
   margin: 10px auto 5px auto;
   cursor: pointer;
 
-  background: rgb(255, 255, 255);
   background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 1) 5%,
@@ -97,7 +147,7 @@ header img {
   border-radius: 10px;
 
   opacity: 0.8;
-  transition: 900ms;
+  transition: 600ms;
 }
 
 .card button:hover {

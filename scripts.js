@@ -2,6 +2,7 @@ const url = `https://digimon-api.vercel.app/api/digimon`
 
 const ul = document.querySelector('ul')
 
+// Fetch api and create all elements
 fetch(url)
 .then((response) => response.json())
 .then(function(data) {
@@ -24,3 +25,4 @@ fetch(url)
     .catch((error) => {
         console.log('Oops!' + error);
     })
+
