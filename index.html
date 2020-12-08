@@ -17,14 +17,16 @@
     </header>
 
     <div class="search-container">
-        <button class="search-button" onclick="searchPage()">
-            <img class="magnifier-img" src="./assets/magnifier.svg">Search Digimon
-        </button>
+        <input id="input-search" type="text" placeholder="Search Digimon">
+            <button class="search-button">
+                <img class="magnifier-img" src="./assets/magnifier.svg">
+            </button>
+        </input>    
     </div>
     
-    <ul class="container">
-    </ul>
+    <ul class="container"></ul>
 
     <script src="./scripts/scripts.js"></script>
+    <script src="./scripts/search.js"></script>
 </body>
 </html>
