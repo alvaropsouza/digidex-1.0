@@ -1,11 +1,19 @@
-const input = document.querySelector("#input-search");
+function searchDigimons() {
+  const inputSearch = document.querySelector("#input-search");
+  const inputSearchValue = inputSearch.addEventListener("change", function () {
+    const inputValue = inputSearch.value;
+    return inputValue;
+  });
 
-// Tentar trabalhar com event listener, para pegar o valor do input e comparar varrendo lista de arrays
+  console.log(inputSearchValue + " Valor do input");
 
-function createArray() {
+  //List all digimons and create array with names
   setTimeout(function () {
-    const names = document.querySelectorAll(".name");
-    const namesArray = Array.from(names);
-    return namesArray;
-  }, 3000);
+    const queryDigimons = document.querySelectorAll(".digimon-name");
+    const digimons = Array.from(queryDigimons);
+    const digimonsMapeados = digimons.map((digimon) => digimon.textContent);
+    console.log(digimonsMapeados);
+  }, 2000);
 }
+
+// GOTTA START WORKING WITH CLASSES TO AVOID SCOPE PROBLEMS
