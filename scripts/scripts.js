@@ -2,13 +2,8 @@ const url = `https://digimon-api.vercel.app/api/digimon`
 
 const ul = document.querySelector('ul')
 
-// Fetch api and create all elements
-fetch(url)
-.then((response) => response.json())
-.then(function(data) {
-
-    return data.map(function(digimon) {
-        let li = document.createElement('li')
+function adicionaCards(digimon) {
+    const li = document.createElement('li')
         li.classList.add('card')
         li.innerHTML = `
         <img src="${digimon.img}" alt="${digimon.name}"/>
@@ -19,9 +14,18 @@ fetch(url)
         </a>        
         `
         ul.appendChild(li)
+}
+ 
+// Fetch api, map elements and create them
+// Still need to make this process cleaner and faster
+ 
+fetch(url)
+.then((response) => response.json())
+.then(data => data.map(function(digimon) {
+        adicionaCards(digimon) 
     })
 
-})
+)
     .catch((error) => {
         console.log('Oops!' + error);
     })
