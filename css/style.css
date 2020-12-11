@@ -166,3 +166,7 @@ header img {
 .marked {
   background-color: red;
 }
+
+.active {
+  background: red;
+}
