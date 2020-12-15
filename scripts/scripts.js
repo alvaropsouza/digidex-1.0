@@ -5,7 +5,7 @@ function adicionaCards(digimon) {
   li.classList.add("card");
   li.innerHTML = `
         <img src="${digimon.img}" alt="${digimon.name}"/>
-        <h1 class="digimon-name">${digimon.name}</h1>
+        <h1 class="digimon-name" id="${digimon.name.toLowerCase()}">${digimon.name.toLowerCase()}</h1>
         <p>${digimon.level}</p>
         <a target="_blank" href="https://digimon.fandom.com/wiki/${digimon.name}">
             <button><p>Digimon Fandom</p></button>
